@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Data Professions Breakdown</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Data Professions Breakdown</h1>
+						<p><a href="https://github.com/PatienceAdzo/AdzoTheAnalyst/tree/main#data-professions-breakdown" target= "_blank">View file in Github</a></p>
+						
+						  
+						  
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+                        <section id="content" class="main">
+                                
+                            <!--a class="icon"><img src="images/Screenshot 2024-01-21 173905.png" /></a-->
+                            <h2>Goal</h2>
+                            <p>The Data Professions Breakdown dashboard offers a comprehensive analysis of global data specializations. Its goal is to assist individuals considering careers in data by providing valuable insights. By examining various data roles, the dashboard equips aspiring professionals with the knowledge needed to make informed career decisions in the dynamic field of data science and analytics.</p>                            
+                            <h2>About the Data</h2>
+                            <p>The dataset comprises findings from a survey administered to professionals within the data industry. The information gathered from the survey partcipants includes their country, age, yearly salary, industry, level of happiness, favourite programming language, age, sex, level of education and level of difficulty when transitioning into the field amongst others.</p>
+                            <h2>Data Loading and Transformation</h2>
+                            <p>The first step is cleaning the data to ensure accurate analysis. This includes removing duplicates, changing datatypes and modifying columns to suit the analysis needs. The following major transformations were made to the data.</p> 
+                            <ul>
+                                <li><b>Grouping the option 'Others' : </b> The sections with information on the survey participant's role, industry, country, favourite programming language, included an option with 'Other' where they could specify whatever information was needed. However to facilitate a better visualization, all information under that option was grouped under one umbrella 'Other'. This was achieved by splitting such options by a delimiter and deleting the column that contained the extra information.</li>
+                                <li><b>Creating an 'Average salary' column : </b> The attribute that contained information on the yearly salary of the participants was in the format of a range. (Eg.'41k-56k') To calculate the average salary column, the 'Current Yearly Salary' column was first split using 'by Digit to Non-digit' to seperate the numeric values. The remaining values are then replaced with blanks to get to seperate columns for the range. After converting the datatype to numbers, a custom column was created with a formula to calculate the average salary.</li>
+                        
+                            </ul>
+                            <a class="image main"><img src="images/TL 2.png" alt="Description of the image" width="800" height="400"/></a>
+
+                            <h2>Dashboard Design and Creation</h2>
+                            <p>After applying the transformations, the processed data is visualized. The dashboard detailed the total number of participants, the average age, a treemap to filter by country, the average salary of each profession, happiness level, programming language and difficulty breaking into each field.</p>
+                            <a class="image main"><img src="images/Dash2.png" alt="Description of the image" width="800" height="400"/></a>
+
+                            <h2>Conclusion</h2>
+                            <p>A total of 504 individuals participated in the survey, with an average age of approximately 30 years. Key insights gleaned from the analysis revealed that the role of Data Scientist commanded the highest salary, and Python emerged as the most favored programming language among respondents. Interestingly, a significant portion of participants expressed neutrality regarding the difficulty of breaking into the field, while only a minority reported encountering substantial challenges in transitioning. Additionally, respondents indicated an average work/life balance satisfaction rating of around 6 on a scale of 0 to 10. Also, satisfaction with salary averaged around 4 on the same scale.</p>
+
+
+                        </section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<ul class="icons">
+								<li><a href="https://github.com/PatienceAdzo/AdzoTheAnalyst" target= "_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/anipa18/" target= "_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

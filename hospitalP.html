@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Hospital Patients Waiting List Report</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Hospital Patients Waiting List Report</h1>
+						<p><a href="https://github.com/PatienceAdzo/AdzoTheAnalyst/tree/main#hospital-patients-wait-list-report" target= "_blank">View file in Github</a></p>
+						
+						  
+						  
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+
+								<!--a class="icon"><img src="images/Screenshot 2024-01-21 173905.png" /></a-->
+								<h2>Goal</h2>
+                                <p>The Hospital Patients Waiting List Dashboard is designed to provide real-time updates on the status of patient waiting lists. It facilitates the analysis of historical monthly trends across inpatient and outpatient categories, utilizing key metrics such as average and median waiting times, along with the total current waitlist count.</p>
+								
+                                <h2>About the Data</h2>
+                                <p>The datasets utilized in this analysis encompass data spanning from 2018 to 2021, capturing details of both outpatients and inpatients within a hospital setting. This includes pertinent information regarding medical cases, case types, time bands, and age profiles. Additionally, another dataset supplements this information by providing insights into specialty areas and their respective specialty groups.</p>
+
+                                <h2>Data Loading and Transformation</h2>
+                                <p>The Power Query Editor was utilized to import and preprocess two datasets containing information on both inpatients and outpatients. Before merging, the datasets underwent cleaning procedures to standardize column formats and address any inconsistencies in column values. This involved replacing erroneous values and ensuring uniformity in column types across both datasets to prevent compatibility issues. Notably, a 'Case Type' column was created for the outpatients dataset to match its counterpart's structure. Subsequently, the datasets were merged to facilitate thorough analysis.</p>
+                                <a class="image main"><img src="images/T & L.png" alt="Description of the image" width="800" height="400"/></a>
+
+                                <h2>Data Modelling</h2>
+                                <p>The dataset, which comprises information regarding specialties and their corresponding specialty groups, was mapped to the specialty names within the merged dataset.</p>
+                                <a class="image main"><img src="images/DM.png" alt="Description of the image" width="800" height="400"/></a>
+
+
+                                <h2>Dashboard Design and Creation</h2>
+                                <p>Following the application of transformations and the necessary dataset mapping, the data is seamlessly visualized. To facilitate the calculation of average and median values, new measures were devised using DAX. Additionally, a new table was constructed using DAX, allowing for the convenient toggling between average and median values.</p>
+                                <p>The dashboard offers an insightful breakdown, enabling the real-time tracking of patient waiting lists based on the latest month or the previous year's data. Further analysis delves into the historical monthly trends of waiting lists across inpatient and outpatient categories, with filters applied based on archive date, case type, and specialty name. The inclusion of buttons labeled 'Average' and 'Median' allows for effortless switching between these values, with the figures dynamically updating accordingly. Moreover, the dashboard highlights the top 5 wait lists on average, filtered by specialty, providing a comprehensive overview of the dataset.</p>
+                                <a class="image main"><img src="images/Dashboard.png" alt="Dashboard" width="800" height="400"/></a>
+
+                                <h2>Conclusion</h2>
+                                <p>Based on the latest month's records, key insights reveal that outpatient cases predominated among the hospital's recorded cases, with age profiles of 18+ months exhibiting the highest waitlist volumes. Remarkably, outpatients demonstrated an upward monthly trend, while inpatients and day cases experienced marginal fluctuations. It is important to note that figures within the analysis are subject to change based on the archive date.</p>
+
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<ul class="icons">
+								<li><a href="https://github.com/PatienceAdzo/AdzoTheAnalyst" target= "_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/anipa18/" target= "_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
